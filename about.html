@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Afrika Vibes Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #fdf6ee;
+        color: #2c1a0e;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Playfair Display", serif;
+      }
+      .navbar {
+        background-color: #2c1a0e !important;
+      }
+      .navbar-brand {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        color: #e8a830 !important;
+        letter-spacing: 1px;
+      }
+      .nav-link {
+        color: #f5deb3 !important;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      .nav-link:hover,
+      .nav-link.active {
+        color: #e8a830 !important;
+      }
+      .page-hero {
+        background: linear-gradient(135deg, #2c1a0e, #8b4513);
+        padding: 60px 0;
+        color: white;
+      }
+      .page-hero h1 {
+        font-size: 2.8rem;
+        color: #e8a830;
+      }
+      .section-title {
+        font-size: 2rem;
+        color: #2c1a0e;
+        border-bottom: 3px solid #e8a830;
+        display: inline-block;
+        padding-bottom: 6px;
+        margin-bottom: 30px;
+      }
+      .btn-gold {
+        background-color: #e8a830;
+        color: #2c1a0e;
+        font-weight: 700;
+        border: none;
+        border-radius: 0;
+        padding: 12px 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .btn-gold:hover {
+        background-color: #c8891a;
+        color: #fff;
+      }
+      .owner-card {
+        background: #fff8f0;
+        box-shadow: 0 4px 20px rgba(44, 26, 14, 0.12);
+        border: none;
+        border-radius: 0;
+      }
+      .owner-img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #e8a830;
+      }
+      .value-card {
+        background: #fff8f0;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 4px 15px rgba(44, 26, 14, 0.1);
+        padding: 30px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .value-card:hover {
+        transform: translateY(-6px);
+      }
+      .value-icon {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+      }
+      .timeline-item {
+        border-left: 3px solid #e8a830;
+        padding-left: 24px;
+        margin-bottom: 32px;
+        position: relative;
+      }
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -8px;
+        top: 4px;
+        width: 14px;
+        height: 14px;
+        background: #e8a830;
+        border-radius: 50%;
+      }
+      .timeline-year {
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+        color: #e8a830;
+        font-weight: 700;
+      }
+      .stat-box {
+        background: #2c1a0e;
+        color: #f5deb3;
+        text-align: center;
+        padding: 30px;
+      }
+      .stat-box h3 {
+        font-size: 2.5rem;
+        color: #e8a830;
+        font-family: "Playfair Display", serif;
+      }
+      footer {
+        background-color: #2c1a0e;
+        color: #f5deb3;
+      }
+      footer a {
+        color: #e8a830;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: #fff;
+      }
+      .pattern-divider {
+        height: 4px;
+        background: repeating-linear-gradient(
+          90deg,
+          #e8a830 0px,
+          #e8a830 20px,
+          #2c1a0e 20px,
+          #2c1a0e 40px
+        );
+      }
+      blockquote {
+        border-left: 4px solid #e8a830;
+        padding-left: 20px;
+        font-style: italic;
+        color: #5a3010;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="week5_ex04_index.html">🌍 Afrika Vibes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="week5_ex04_index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week5_ex04_products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="week5_ex04_about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week5_ex04_contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero text-center animate__animated animate__fadeIn">
+      <div class="container">
+        <h1 class="fw-bold mb-2">Our Story</h1>
+        <p class="text-white-50">
+          Born in Cape Town. Rooted in Africa. Built for the world.
+        </p>
+      </div>
+    </section>
+
+    <div class="pattern-divider"></div>
+
+    <!-- ALERT -->
+    <div class="container mt-4">
+      <div
+        class="alert alert-success d-flex align-items-center rounded-0"
+        role="alert"
+      >
+        <span class="me-2 fs-5">🏆</span>
+        <div>
+          Afrika Vibes was named
+          <strong>Best Emerging Lifestyle Brand</strong> at the Cape Town
+          Fashion Week 2024!
+        </div>
+      </div>
+    </div>
+
+    <!-- OWNER SECTION -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div
+            class="col-lg-5 text-center animate__animated animate__fadeInLeft"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&q=80"
+              alt="Founder"
+              class="owner-img mb-4"
+            />
+            <h3 class="mb-1">Amara Dlamini</h3>
+            <p class="text-muted mb-0">Founder & Creative Director</p>
+            <p class="small" style="color: #8b4513">
+              📍 Cape Town, South Africa
+            </p>
+            <div class="mt-3 d-flex justify-content-center gap-2">
+              <span class="badge" style="background: #e8a830; color: #2c1a0e"
+                >Fashion Designer</span
+              >
+              <span class="badge" style="background: #2c1a0e; color: #e8a830"
+                >Entrepreneur</span
+              >
+              <span class="badge" style="background: #8b4513; color: #fff"
+                >Activist</span
+              >
+            </div>
+          </div>
+          <div class="col-lg-7 animate__animated animate__fadeInRight">
+            <h2 class="section-title">Meet the Founder</h2>
+            <blockquote class="mb-4">
+              "Africa is not just where I'm from — it's my inspiration, my
+              canvas, and my greatest pride. Every stitch in our clothing tells
+              a story."
+            </blockquote>
+            <p class="mb-3">
+              Amara Dlamini grew up in Khayelitsha, Cape Town, surrounded by
+              vibrant colours, music, and the rich tapestry of South African
+              culture. From a young age, she had a passion for fashion — turning
+              scraps of fabric into statement pieces that her community admired.
+            </p>
+            <p class="mb-3">
+              After completing a Fashion Design diploma at CPUT (Cape Peninsula
+              University of Technology), Amara launched
+              <strong>Afrika Vibes</strong> from her parents' garage in 2020
+              with a sewing machine, a WhatsApp group, and a big dream. Today,
+              the brand ships to customers across South Africa and the African
+              continent.
+            </p>
+            <p>
+              Her mission is simple:
+              <strong
+                >to make African culture wearable, accessible, and
+                celebrated</strong
+              >
+              — while creating sustainable employment for local artisans and
+              makers in Cape Town's townships.
+            </p>
+            <a href="week5_ex04_contact.html" class="btn btn-gold mt-3"
+              >Work With Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="py-5" style="background-color: #fdf0e0">
+      <div class="container">
+        <div class="row g-3 text-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-box">
+              <h3>5+</h3>
+              <p class="small mb-0">Years in Business</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-box">
+              <h3>2,400+</h3>
+              <p class="small mb-0">Happy Customers</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-box">
+              <h3>50+</h3>
+              <p class="small mb-0">Unique Designs</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-box">
+              <h3>12</h3>
+              <p class="small mb-0">Local Artisans Employed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR VALUES -->
+    <section class="py-5">
+      <div class="container">
+        <h2
+          class="section-title text-center d-block animate__animated animate__fadeInUp"
+        >
+          Our Values
+        </h2>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4 animate__animated animate__fadeInUp">
+            <div class="value-card">
+              <div class="value-icon">🌍</div>
+              <h5>African Pride</h5>
+              <p class="text-muted small">
+                We celebrate the depth, beauty, and diversity of African culture
+                in every product we create. Our roots drive our creativity.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-4 animate__animated animate__fadeInUp"
+            style="animation-delay: 0.15s"
+          >
+            <div class="value-card">
+              <div class="value-icon">🤝</div>
+              <h5>Community First</h5>
+              <p class="text-muted small">
+                We employ local artisans and partner with township-based makers.
+                Every purchase directly supports families in Cape Town.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-4 animate__animated animate__fadeInUp"
+            style="animation-delay: 0.3s"
+          >
+            <div class="value-card">
+              <div class="value-icon">♻️</div>
+              <h5>Sustainability</h5>
+              <p class="text-muted small">
+                We use eco-friendly dyes, recycled packaging, and source fabrics
+                from responsible suppliers committed to the environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="py-5" style="background-color: #fdf0e0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="section-title animate__animated animate__fadeInLeft">
+              Our Journey
+            </h2>
+            <div class="mt-4">
+              <div class="timeline-item">
+                <div class="timeline-year">2020</div>
+                <p class="mb-0">
+                  Afrika Vibes launched from a garage in Khayelitsha with 3
+                  products and a WhatsApp group of 50 friends.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2021</div>
+                <p class="mb-0">
+                  First market stall at the Cape Town Neighbourgoods Market.
+                  Sold out in 4 hours! The brand started getting noticed.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2022</div>
+                <p class="mb-0">
+                  Launched our first e-commerce website. Expanded to 20+
+                  products and started shipping nationally across South Africa.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <p class="mb-0">
+                  Partnered with 8 local artisans. Introduced the Kids Range and
+                  corporate bulk order programme.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+                <p class="mb-0">
+                  Named Best Emerging Lifestyle Brand at Cape Town Fashion Week.
+                  Began shipping to Botswana, Namibia & Zimbabwe.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-year">2025 →</div>
+                <p class="mb-0">
+                  Launching our flagship store in Long Street, Cape Town. Watch
+                  this space! 🚀
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-flex align-items-center animate__animated animate__fadeInRight"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80"
+              alt="Our Workshop"
+              class="img-fluid w-100"
+              style="object-fit: cover; max-height: 420px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section
+      class="py-5 text-center"
+      style="background: linear-gradient(135deg, #2c1a0e, #5a3010)"
+    >
+      <div class="container">
+        <h2
+          style="
+            color: #e8a830;
+            font-family: &quot;Playfair Display&quot;, serif;
+          "
+          class="mb-3"
+        >
+          Ready to Wear the Vibe?
+        </h2>
+        <p class="text-white-50 mb-4">
+          Browse our collection and find your perfect piece of Africa.
+        </p>
+        <a href="week5_ex04_products.html" class="btn btn-gold btn-lg me-3"
+          >Shop Now</a
+        >
+        <a
+          href="week5_ex04_contact.html"
+          class="btn btn-outline-light btn-lg"
+          style="border-radius: 0"
+          >Contact Us</a
+        >
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5
+              style="
+                color: #e8a830;
+                font-family: &quot;Playfair Display&quot;, serif;
+              "
+            >
+              Afrika Vibes
+            </h5>
+            <p class="small">
+              Lifestyle clothing rooted in African culture. Based in Cape Town,
+              South Africa.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 style="color: #e8a830">Quick Links</h6>
+            <ul class="list-unstyled small">
+              <li><a href="week5_ex04_index.html">Home</a></li>
+              <li><a href="week5_ex04_products.html">Products</a></li>
+              <li><a href="week5_ex04_about.html">About Us</a></li>
+              <li><a href="week5_ex04_contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 style="color: #e8a830">Contact</h6>
+            <p class="small mb-1">📧 hello@afrikavibes.co.za</p>
+            <p class="small mb-1">📍 Cape Town, Western Cape</p>
+            <p class="small">📱 +27 21 000 1234</p>
+          </div>
+        </div>
+        <hr style="border-color: #5a3010" />
+        <p class="text-center small mb-0" style="color: #8b6040">
+          © 2025 Afrika Vibes. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

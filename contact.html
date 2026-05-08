@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Afrika Vibes Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #fdf6ee;
+        color: #2c1a0e;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Playfair Display", serif;
+      }
+      .navbar {
+        background-color: #2c1a0e !important;
+      }
+      .navbar-brand {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        color: #e8a830 !important;
+        letter-spacing: 1px;
+      }
+      .nav-link {
+        color: #f5deb3 !important;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      .nav-link:hover,
+      .nav-link.active {
+        color: #e8a830 !important;
+      }
+      .page-hero {
+        background: linear-gradient(135deg, #2c1a0e, #8b4513);
+        padding: 60px 0;
+        color: white;
+      }
+      .page-hero h1 {
+        font-size: 2.8rem;
+        color: #e8a830;
+      }
+      .btn-gold {
+        background-color: #e8a830;
+        color: #2c1a0e;
+        font-weight: 700;
+        border: none;
+        border-radius: 0;
+        padding: 12px 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .btn-gold:hover {
+        background-color: #c8891a;
+        color: #fff;
+      }
+      .contact-card {
+        background: #fff8f0;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 4px 20px rgba(44, 26, 14, 0.12);
+        padding: 40px;
+      }
+      .form-control,
+      .form-select {
+        border-radius: 0;
+        border: 2px solid #d4a96a;
+        background-color: #fff8f0;
+      }
+      .form-control:focus,
+      .form-select:focus {
+        border-color: #e8a830;
+        box-shadow: 0 0 0 0.2rem rgba(232, 168, 48, 0.25);
+      }
+      .form-label {
+        font-weight: 600;
+        color: #2c1a0e;
+      }
+      .info-box {
+        background-color: #2c1a0e;
+        color: #f5deb3;
+        padding: 30px;
+        border-radius: 0;
+      }
+      .info-box h5 {
+        color: #e8a830;
+        font-family: "Playfair Display", serif;
+      }
+      .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+      .info-icon {
+        font-size: 1.5rem;
+        min-width: 30px;
+      }
+      footer {
+        background-color: #2c1a0e;
+        color: #f5deb3;
+      }
+      footer a {
+        color: #e8a830;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: #fff;
+      }
+      .pattern-divider {
+        height: 4px;
+        background: repeating-linear-gradient(
+          90deg,
+          #e8a830 0px,
+          #e8a830 20px,
+          #2c1a0e 20px,
+          #2c1a0e 40px
+        );
+      }
+      .map-placeholder {
+        background: linear-gradient(135deg, #5a3010, #8b4513);
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #e8a830;
+        font-family: "Playfair Display", serif;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="week5_ex04_index.html">🌍 Afrika Vibes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="week5_ex04_index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week5_ex04_products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week5_ex04_about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="week5_ex04_contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero text-center animate__animated animate__fadeIn">
+      <div class="container">
+        <h1 class="fw-bold mb-2">Get In Touch</h1>
+        <p class="text-white-50">
+          We'd love to hear from you — orders, questions, or just to say
+          sawubona 👋
+        </p>
+      </div>
+    </section>
+
+    <div class="pattern-divider"></div>
+
+    <section class="py-5">
+      <div class="container">
+        <!-- ALERT -->
+        <div
+          class="alert alert-info d-flex align-items-center rounded-0 mb-4 animate__animated animate__fadeInDown"
+          role="alert"
+        >
+          <span class="me-2 fs-5">💬</span>
+          <div>
+            For the fastest response, WhatsApp us at
+            <strong>+27 21 000 1234</strong> — we typically reply within 2 hours
+            during business hours.
+          </div>
+        </div>
+
+        <div class="row g-5 align-items-start">
+          <!-- CONTACT FORM -->
+          <div class="col-lg-7 animate__animated animate__fadeInLeft">
+            <div class="contact-card">
+              <h2
+                class="mb-4"
+                style="
+                  color: #2c1a0e;
+                  border-bottom: 3px solid #e8a830;
+                  display: inline-block;
+                  padding-bottom: 6px;
+                "
+              >
+                Send Us a Message
+              </h2>
+              <p class="text-muted mb-4">
+                Fill in the form below and we'll get back to you within 24
+                hours.
+              </p>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Thabo"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Nkosi"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="thabo@example.com"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="+27 82 000 0000"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="subject" class="form-label">Subject *</label>
+                  <select class="form-select" id="subject">
+                    <option value="" selected disabled>
+                      Select a topic...
+                    </option>
+                    <option>Product Enquiry</option>
+                    <option>Order Status</option>
+                    <option>Sizing & Fit</option>
+                    <option>Returns & Exchanges</option>
+                    <option>Bulk / Corporate Orders</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Your Message *</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Tell us how we can help you..."
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="newsletter"
+                      style="border-color: #d4a96a"
+                    />
+                    <label
+                      class="form-check-label small text-muted"
+                      for="newsletter"
+                    >
+                      Subscribe to our newsletter for new arrivals &amp;
+                      exclusive deals
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn btn-gold w-100 py-3 fs-6">
+                    Send Message 📩
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="col-lg-5 animate__animated animate__fadeInRight">
+            <div class="info-box mb-4">
+              <h5 class="mb-4">Contact Information</h5>
+
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <strong style="color: #e8a830">Address</strong><br />
+                  <span class="small"
+                    >12 Long Street, Bo-Kaap<br />Cape Town, 8001<br />Western
+                    Cape, South Africa</span
+                  >
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">📱</span>
+                <div>
+                  <strong style="color: #e8a830">WhatsApp / Phone</strong><br />
+                  <span class="small"
+                    >+27 21 000 1234<br />Mon–Fri: 08:00 – 17:00<br />Sat: 09:00
+                    – 13:00</span
+                  >
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">📧</span>
+                <div>
+                  <strong style="color: #e8a830">Email</strong><br />
+                  <span class="small"
+                    >hello@afrikavibes.co.za<br />orders@afrikavibes.co.za</span
+                  >
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-icon">🌐</span>
+                <div>
+                  <strong style="color: #e8a830">Social Media</strong><br />
+                  <span class="small"
+                    >@AfrikaVibesZA on Instagram, Facebook &amp; TikTok</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- MAP PLACEHOLDER -->
+            <div class="map-placeholder">📍 Cape Town, South Africa</div>
+
+            <!-- BULK ORDERS CARD -->
+            <div
+              class="mt-4 p-4"
+              style="background: #fff8f0; border-left: 4px solid #e8a830"
+            >
+              <h6
+                style="
+                  font-family: &quot;Playfair Display&quot;, serif;
+                  color: #2c1a0e;
+                "
+              >
+                🏢 Corporate & Bulk Orders
+              </h6>
+              <p class="small text-muted mb-2">
+                Need custom branded aprons, tees, or uniforms for your team or
+                event? We offer competitive bulk pricing with custom embroidery
+                or printing.
+              </p>
+              <span class="badge" style="background: #e8a830; color: #2c1a0e"
+                >Orders of 10+ items</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5
+              style="
+                color: #e8a830;
+                font-family: &quot;Playfair Display&quot;, serif;
+              "
+            >
+              Afrika Vibes
+            </h5>
+            <p class="small">
+              Lifestyle clothing rooted in African culture. Based in Cape Town,
+              South Africa.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 style="color: #e8a830">Quick Links</h6>
+            <ul class="list-unstyled small">
+              <li><a href="week5_ex04_index.html">Home</a></li>
+              <li><a href="week5_ex04_products.html">Products</a></li>
+              <li><a href="week5_ex04_about.html">About Us</a></li>
+              <li><a href="week5_ex04_contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 style="color: #e8a830">Contact</h6>
+            <p class="small mb-1">📧 hello@afrikavibes.co.za</p>
+            <p class="small mb-1">📍 Cape Town, Western Cape</p>
+            <p class="small">📱 +27 21 000 1234</p>
+          </div>
+        </div>
+        <hr style="border-color: #5a3010" />
+        <p class="text-center small mb-0" style="color: #8b6040">
+          © 2025 Afrika Vibes. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

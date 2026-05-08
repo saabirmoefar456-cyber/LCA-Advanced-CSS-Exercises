@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afrika Vibes Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #fdf6ee;
+        color: #2c1a0e;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Playfair Display", serif;
+      }
+      .navbar {
+        background-color: #2c1a0e !important;
+      }
+      .navbar-brand {
+        font-family: "Playfair Display", serif;
+        font-size: 1.6rem;
+        color: #e8a830 !important;
+        letter-spacing: 1px;
+      }
+      .nav-link {
+        color: #f5deb3 !important;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      .nav-link:hover {
+        color: #e8a830 !important;
+      }
+      .hero-section {
+        background: linear-gradient(
+          135deg,
+          #2c1a0e 0%,
+          #5a3010 50%,
+          #8b4513 100%
+        );
+        color: white;
+        padding: 100px 0;
+      }
+      .hero-section h1 {
+        font-size: 3.5rem;
+        color: #e8a830;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+      }
+      .btn-gold {
+        background-color: #e8a830;
+        color: #2c1a0e;
+        font-weight: 700;
+        border: none;
+        border-radius: 0;
+        padding: 12px 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .btn-gold:hover {
+        background-color: #c8891a;
+        color: #fff;
+      }
+      .section-title {
+        font-size: 2.2rem;
+        color: #2c1a0e;
+        border-bottom: 3px solid #e8a830;
+        display: inline-block;
+        padding-bottom: 6px;
+        margin-bottom: 30px;
+      }
+      .card {
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 4px 15px rgba(44, 26, 14, 0.12);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        background-color: #fff8f0;
+      }
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 30px rgba(44, 26, 14, 0.2);
+      }
+      .card-title {
+        font-family: "Playfair Display", serif;
+        color: #2c1a0e;
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .badge-gold {
+        background-color: #e8a830;
+        color: #2c1a0e;
+        font-weight: 700;
+      }
+      footer {
+        background-color: #2c1a0e;
+        color: #f5deb3;
+      }
+      footer a {
+        color: #e8a830;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: #fff;
+      }
+      .carousel-item img {
+        height: 420px;
+        object-fit: cover;
+        filter: brightness(0.75);
+      }
+      .carousel-caption h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+      }
+      .feature-icon {
+        font-size: 2.5rem;
+        color: #e8a830;
+      }
+      .pattern-divider {
+        height: 4px;
+        background: repeating-linear-gradient(
+          90deg,
+          #e8a830 0px,
+          #e8a830 20px,
+          #2c1a0e 20px,
+          #2c1a0e 40px
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="week5_ex04_index.html">🌍 Afrika Vibes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="week5_ex04_index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week5_ex04_products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week5_ex04_about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="week5_ex04_contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ALERT -->
+    <div
+      class="alert alert-warning alert-dismissible fade show mb-0 text-center rounded-0 fw-bold"
+      role="alert"
+    >
+      🔥 FREE delivery on orders over R500 — Limited time offer!
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero-section text-center animate__animated animate__fadeIn">
+      <div class="container">
+        <p
+          class="text-uppercase fw-bold mb-2"
+          style="color: #e8a830; letter-spacing: 3px"
+        >
+          Proudly South African
+        </p>
+        <h1
+          class="display-4 fw-black mb-4 animate__animated animate__fadeInDown"
+        >
+          Wear the Spirit of Africa
+        </h1>
+        <p
+          class="lead mb-5 text-white-50"
+          style="max-width: 600px; margin: 0 auto"
+        >
+          Bold lifestyle clothing & accessories rooted in African culture —
+          aprons, tees, swim shorts & more.
+        </p>
+        <a href="week5_ex04_products.html" class="btn btn-gold btn-lg me-3"
+          >Shop Now</a
+        >
+        <a
+          href="week5_ex04_about.html"
+          class="btn btn-outline-light btn-lg"
+          style="border-radius: 0"
+          >Our Story</a
+        >
+      </div>
+    </section>
+
+    <div class="pattern-divider"></div>
+
+    <!-- CAROUSEL -->
+    <section class="py-0">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&q=80"
+              class="d-block w-100"
+              alt="Summer Collection"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Summer Collection 2025</h3>
+              <p>Vibrant colours, African prints, unlimited style</p>
+              <a href="week5_ex04_products.html" class="btn btn-gold"
+                >Explore</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=1200&q=80"
+              class="d-block w-100"
+              alt="New Arrivals"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>New Arrivals Every Week</h3>
+              <p>Fresh drops straight from Cape Town</p>
+              <a href="week5_ex04_products.html" class="btn btn-gold"
+                >Shop New</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80"
+              class="d-block w-100"
+              alt="Gifts"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Perfect Gifts for Everyone</h3>
+              <p>Give the gift of African pride</p>
+              <a href="week5_ex04_contact.html" class="btn btn-gold"
+                >Get in Touch</a
+              >
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <div class="pattern-divider"></div>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title animate__animated animate__fadeInUp">
+            Featured Products
+          </h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 animate__animated animate__fadeInUp">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80"
+                class="card-img-top"
+                alt="Graphic Tee"
+              />
+              <div class="card-body">
+                <span class="badge badge-gold mb-2">Best Seller</span>
+                <h5 class="card-title">Afrika Pride Tee</h5>
+                <p class="card-text text-muted">
+                  Bold African-print graphic tee. 100% cotton comfort.
+                </p>
+                <p class="fw-bold fs-5" style="color: #8b4513">R 249</p>
+                <a href="week5_ex04_products.html" class="btn btn-gold w-100"
+                  >View Product</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 animate__animated animate__fadeInUp"
+            style="animation-delay: 0.15s"
+          >
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?w=600&q=80"
+                class="card-img-top"
+                alt="Apron"
+              />
+              <div class="card-body">
+                <span class="badge badge-gold mb-2">New</span>
+                <h5 class="card-title">Braai Master Apron</h5>
+                <p class="card-text text-muted">
+                  Heavy-duty canvas apron with African kente print.
+                </p>
+                <p class="fw-bold fs-5" style="color: #8b4513">R 199</p>
+                <a href="week5_ex04_products.html" class="btn btn-gold w-100"
+                  >View Product</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 animate__animated animate__fadeInUp"
+            style="animation-delay: 0.3s"
+          >
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+                class="card-img-top"
+                alt="Swim Short"
+              />
+              <div class="card-body">
+                <span class="badge bg-danger mb-2">Sale</span>
+                <h5 class="card-title">Sunset Swim Short</h5>
+                <p class="card-text text-muted">
+                  Quick-dry swim shorts with vibrant sunset print.
+                </p>
+                <p class="fw-bold fs-5" style="color: #8b4513">
+                  R 329
+                  <small class="text-muted text-decoration-line-through fs-6"
+                    >R 419</small
+                  >
+                </p>
+                <a href="week5_ex04_products.html" class="btn btn-gold w-100"
+                  >View Product</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a
+            href="week5_ex04_products.html"
+            class="btn btn-outline-dark btn-lg"
+            style="border-radius: 0; border-color: #2c1a0e"
+            >View All Products →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="py-5" style="background-color: #2c1a0e; color: #f5deb3">
+      <div class="container">
+        <h2
+          class="text-center mb-5"
+          style="
+            color: #e8a830;
+            font-family: &quot;Playfair Display&quot;, serif;
+          "
+        >
+          Why Afrika Vibes?
+        </h2>
+        <div class="row text-center g-4">
+          <div class="col-md-3">
+            <div class="feature-icon mb-3">🌍</div>
+            <h5 style="color: #e8a830">Proudly African</h5>
+            <p class="small">
+              Every design celebrates our rich African heritage and culture.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-icon mb-3">♻️</div>
+            <h5 style="color: #e8a830">Sustainable</h5>
+            <p class="small">
+              Eco-friendly materials sourced responsibly from local suppliers.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-icon mb-3">🚚</div>
+            <h5 style="color: #e8a830">Fast Delivery</h5>
+            <p class="small">
+              Nationwide delivery within 3–5 business days. Free over R500.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-icon mb-3">💳</div>
+            <h5 style="color: #e8a830">Secure Payment</h5>
+            <p class="small">
+              Pay via EFT, Capitec Pay, or PayFast — safe &amp; encrypted.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5
+              style="
+                color: #e8a830;
+                font-family: &quot;Playfair Display&quot;, serif;
+              "
+            >
+              Afrika Vibes
+            </h5>
+            <p class="small">
+              Lifestyle clothing rooted in African culture. Based in Cape Town,
+              South Africa.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 style="color: #e8a830">Quick Links</h6>
+            <ul class="list-unstyled small">
+              <li><a href="week5_ex04_index.html">Home</a></li>
+              <li><a href="week5_ex04_products.html">Products</a></li>
+              <li><a href="week5_ex04_about.html">About Us</a></li>
+              <li><a href="week5_ex04_contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h6 style="color: #e8a830">Contact</h6>
+            <p class="small mb-1">📧 hello@afrikavibes.co.za</p>
+            <p class="small mb-1">📍 Cape Town, Western Cape</p>
+            <p class="small">📱 +27 21 000 1234</p>
+          </div>
+        </div>
+        <hr style="border-color: #5a3010" />
+        <p class="text-center small mb-0" style="color: #8b6040">
+          © 2025 Afrika Vibes. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
