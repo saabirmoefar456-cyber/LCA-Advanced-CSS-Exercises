@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabah | Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="week5_ex05_style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar">
+    <div class="nav-logo">S.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Sabah</h1>
+      <p class="hero-tagline">Frontend developer in training &mdash; turning ideas into clean, responsive web experiences.</p>
+      <a href="#projects" class="btn-primary">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-image">
+        <img src="https://placehold.co/320x380/1a1a2e/e0b96a?text=Sabah" alt="Profile photo placeholder" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I'm a frontend web development trainee at Life Choices Academy in Cape Town. During the day I work in financial accounting at the Western Cape Government, and in my spare time I'm learning to build things on the web — one exercise at a time.
+        </p>
+        <p>
+          I enjoy the problem-solving side of coding: figuring out why a layout breaks, getting a hover effect just right, or making a page work on both a phone and a desktop. I'm drawn to clean design and writing code that actually makes sense when you read it back later.
+        </p>
+        <p>
+          Outside of code I have a strong interest in digital business and entrepreneurship, and I'm always thinking about how the web can solve real problems for people.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+      <div class="skill-item">
+        <span class="skill-icon">&#60;/&#62;</span>
+        <span>HTML5</span>
+      </div>
+      <div class="skill-item">
+        <span class="skill-icon">#</span>
+        <span>CSS3</span>
+      </div>
+      <div class="skill-item">
+        <span class="skill-icon">JS</span>
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <span class="skill-icon">&#9633;</span>
+        <span>CSS Grid</span>
+      </div>
+      <div class="skill-item">
+        <span class="skill-icon">&#8703;</span>
+        <span>Flexbox</span>
+      </div>
+      <div class="skill-item">
+        <span class="skill-icon">Py</span>
+        <span>Python</span>
+      </div>
+      <div class="skill-item">
+        <span class="skill-icon">&#9651;</span>
+        <span>Responsive Design</span>
+      </div>
+      <div class="skill-item">
+        <span class="skill-icon">Git</span>
+        <span>Git &amp; GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="card-top">
+          <span class="card-tag">HTML / CSS</span>
+        </div>
+        <h3>Personal Portfolio</h3>
+        <p>A fully responsive portfolio page built with pure CSS Grid and Flexbox. No frameworks — just semantic HTML and carefully organised CSS.</p>
+        <a href="#" class="card-link">View Project &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <div class="card-top">
+          <span class="card-tag">HTML / CSS / JS</span>
+        </div>
+        <h3>Product Landing Page</h3>
+        <p>A clean, minimal landing page for a fictional product. Focuses on typography hierarchy and a clear call-to-action layout.</p>
+        <a href="#" class="card-link">View Project &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <div class="card-top">
+          <span class="card-tag">CSS / Layout</span>
+        </div>
+        <h3>CSS Grid Gallery</h3>
+        <p>An image gallery experiment using CSS Grid's auto-placement and named areas. Fully responsive across three breakpoints.</p>
+        <a href="#" class="card-link">View Project &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <div class="card-top">
+          <span class="card-tag">Python</span>
+        </div>
+        <h3>Python Exercise Collection</h3>
+        <p>A GitHub repository of weekly Python exercises covering variables, loops, functions, lists, and dictionaries — submitted as part of the LCA programme.</p>
+        <a href="#" class="card-link">View on GitHub &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-intro">I'm always open to new opportunities and conversations. Feel free to reach out.</p>
+    <div class="contact-form-wrapper">
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn-primary" type="button">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Sabah &copy; 2026</p>
+    <p class="footer-note">Built with HTML &amp; CSS &mdash; Life Choices Academy</p>
+  </footer>
+
+</body>
+</html>
